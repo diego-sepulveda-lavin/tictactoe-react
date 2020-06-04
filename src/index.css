@@ -1,13 +1,129 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    padding: 0px;
+    margin: 0px;
+    background-color: #5E5954;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#titulo {
+    color: white;
+    font-weight: 900;
 }
+
+#subtitulo {
+    color: white;
+    font-weight: 900;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+}
+
+.celda {
+    background-color: #5E5954;
+    width: 100%;
+    height: 10.3vw;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorTablero {
+    width: 50vw;
+}
+
+div.col {
+    padding: 0px;
+}
+
+div#c1.celda {
+    border-bottom: 3px solid #696662;
+    border-right: 3px solid #696662;
+}
+
+div#c2.celda {
+    border-bottom: 3px solid #696662;
+}
+
+div#c3.celda {
+    border-bottom: 3px solid #696662;
+    border-left: 3px solid #696662;
+}
+
+div#c4.celda {
+    border-right: 3px solid #696662;
+}
+
+div#c6.celda {
+    border-left: 3px solid #696662;
+}
+
+div#c7.celda {
+    border-top: 3px solid #696662;
+    border-right: 3px solid #696662;
+}
+
+div#c8.celda {
+    border-top: 3px solid #696662;
+}
+
+div#c9.celda {
+    border-top: 3px solid #696662;
+    border-left: 3px solid #696662;
+}
+
+.nuevoJuegoContainer {
+    background-color: #48433c;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+}
+
+#chooseWeaponText {
+    color: white;
+    font-weight: 900;
+}
+
+.selectX {
+    background-color: #423B34;
+    width: 5vw;
+    height: 5vw;
+    color: #edd97d;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.selectX:hover {
+    background-color: #595550;
+    cursor: pointer;
+}
+
+.selectO {
+    background-color: #423B34;
+    width: 5vw;
+    height: 5vw;
+    color: #3FACD6;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.selectO:hover {
+    background-color: #595550;
+    cursor: pointer;
+}
+
