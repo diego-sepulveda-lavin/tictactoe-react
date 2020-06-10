@@ -1,36 +1,31 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 
-function NuevoJuego() {
-
-    const [jugadorX, setJugadorX] = useState("")
-    const [jugadorO, setJugadorO] = useState("")
-
-    function capturePlayer(e){
-        console.log(e.target.value)
-    }
+const NuevoJuego = (props) => {
 
     return (
-        <div className="container nuevoJuegoContainer">
-            <div className="row">
-                <div className="col">
-                    <h2 id="chooseWeaponText">Choose your Weapon</h2>
+        <div className="row" >
+            <div className="container nuevoJuegoContainer">
+                <div className="row">
+                    <div className="col">
+                        <h2 id="chooseWeaponText">Choose your Weapon</h2>
+                    </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col">
-                    <input type="text" name="" id="" placeholder="Player 1 username" onChange={capturePlayer}/>
+                <div className="row">
+                    <div className="col">
+                        <input type="text" name="jugador1" placeholder="Player 1" onChange={props.handleInputChange} />
+                    </div>
+                    <div className="col">
+                        <input type="text" name="jugador2" placeholder="Player 2" onChange={props.handleInputChange} />
+                    </div>
                 </div>
-                <div className="col">
-                    <input type="text" name="" id="" placeholder="Player 2 username"onChange={capturePlayer}/>
-                </div>
-            </div>
-            <div className="row">
-                <div className="col">
-                    <div className="selectX">X</div>
-                </div>
-                <div className="col">
-                    <div className="selectO">O</div>
+                <div className="row">
+                    <div className="col">
+                        <div className="selectX" onClick={props.handleSelectedWeapon}>X</div>
+                    </div>
+                    <div className="col">
+                        <div className="selectO" onClick={props.handleSelectedWeapon}>O</div>
+                    </div>
                 </div>
             </div>
         </div>

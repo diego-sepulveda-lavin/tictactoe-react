@@ -42,40 +42,53 @@ div.col {
     padding: 0px;
 }
 
-div#c1.celda {
+#c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9 {
+    font-size: 10vw;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#c1{
     border-bottom: 3px solid #696662;
     border-right: 3px solid #696662;
 }
 
-div#c2.celda {
+#c2 {
     border-bottom: 3px solid #696662;
 }
 
-div#c3.celda {
+#c3 {
     border-bottom: 3px solid #696662;
     border-left: 3px solid #696662;
 }
 
-div#c4.celda {
+#c4 {
     border-right: 3px solid #696662;
 }
 
-div#c6.celda {
+#c6 {
     border-left: 3px solid #696662;
 }
 
-div#c7.celda {
+#c7 {
     border-top: 3px solid #696662;
     border-right: 3px solid #696662;
 }
 
-div#c8.celda {
+#c8 {
     border-top: 3px solid #696662;
 }
 
-div#c9.celda {
+#c9 {
     border-top: 3px solid #696662;
     border-left: 3px solid #696662;
+}
+
+#c1:hover, #c2:hover, #c3:hover, #c4:hover, #c5:hover, #c6:hover, #c7:hover, #c8:hover, #c9:hover {
+    background-color: tomato;
 }
 
 .nuevoJuegoContainer {
@@ -90,40 +103,49 @@ div#c9.celda {
     font-weight: 900;
 }
 
-.selectX {
+.selectX, .selectO {
     background-color: #423B34;
     width: 5vw;
     height: 5vw;
+    font-size: 40px;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.selectX{
     color: #edd97d;
-    font-size: 40px;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
 }
 
-.selectX:hover {
-    background-color: #595550;
-    cursor: pointer;
-}
-
-.selectO {
-    background-color: #423B34;
-    width: 5vw;
-    height: 5vw;
+.selectO{
     color: #3FACD6;
-    font-size: 40px;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
 
 }
 
-.selectO:hover {
+.selectX:hover, .selectO:hover {
     background-color: #595550;
     cursor: pointer;
 }
 
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+ 
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+ }
+ 
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+ }
+ 
+ :-ms-input-placeholder {  
+    text-align: center; 
+ }
+
+ input{
+     text-align: center;
+     width: 80%;
+ }
