@@ -47,6 +47,15 @@ const App = () => {
 
     }
 
+    const reset = () => {
+        setDatos({
+            jugador1: null,
+            jugador2: null,
+            selectedWeapon: null,
+            turno: true
+        })
+    }
+
     return (
         <>
             <div className="container">
@@ -55,7 +64,7 @@ const App = () => {
                     (datos.jugador1 === null || datos.jugador2 === null || datos.selectedWeapon === null) ?
                         <NuevoJuego handleInputChange={handleInputChange} handleSelectedWeapon={handleSelectedWeapon} />
                         :
-                        <Tablero {...datos} handleChangeWeapon={handleChangeWeapon} />
+                        <Tablero {...datos} handleChangeWeapon={handleChangeWeapon} reset={reset} />
                 }
 
             </div>

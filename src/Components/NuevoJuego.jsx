@@ -13,10 +13,10 @@ const NuevoJuego = (props) => {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <input type="text" name="jugador1" placeholder="Player 1" onChange={props.handleInputChange} />
+                        <input type="text" name="jugador1" placeholder="Player 1" onChange={props.handleInputChange} autoComplete="off" />
                     </div>
                     <div className="col">
-                        <input type="text" name="jugador2" placeholder="Player 2" onChange={props.handleInputChange} />
+                        <input type="text" name="jugador2" placeholder="Player 2" onChange={props.handleInputChange} autoComplete="off" />
                     </div>
                 </div>
                 <div className="row">
